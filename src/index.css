@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+:root {
+  /* Application Variables (Default Dark) */
+  --app-bg: #000000;
+  --app-text: #ffffff;
+  --app-border: rgba(255, 255, 255, 0.1);
+  --app-accent: #ffffff;
+
+  /* Popup Variables (Constant Dark) */
+  --popup-bg: #101010;
+  --popup-text: #ffffff;
+  --popup-border: rgba(255, 255, 255, 0.1);
+}
+
+.light {
+  --app-bg: #ffffff;
+  --app-text: #18181b;
+  --app-border: rgba(0, 0, 0, 0.1);
+  --app-accent: #3f3f46;
+}
+
+.gold {
+  --app-bg: #1a1a1a;
+  --app-text: #fef3c7;
+  --app-border: rgba(217, 119, 6, 0.3);
+  --app-accent: #d97706;
+}
+
+@keyframes liquid-flow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.animate-liquid-flow {
+  animation: liquid-flow 10s ease infinite;
+  background-size: 200% 200%;
+}
+
+
